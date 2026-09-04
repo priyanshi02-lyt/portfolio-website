@@ -1,0 +1,8 @@
+.openai
+outputs
+dist
+.wrangler
+.vinext
+work
+.git
+*.tsbuildinfo
