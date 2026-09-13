@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://priyanshi-portfolio-3.vercel.app/sitemap.xml

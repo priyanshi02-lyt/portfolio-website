@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://priyanshi-portfolio-3.vercel.app/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://priyanshi-portfolio-3.vercel.app/public/assets/projects/aquaalert.jpg</image:loc>
+      <image:title>Jal Setu (AquaAlert) Civic Water Leakage Watchdog by Priyanshi Srivastava</image:title>
+      <image:caption>Jal Setu Smart Civic-Tech Platform Dashboard and Municipal Jal Nigam Triage</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://priyanshi-portfolio-3.vercel.app/public/assets/about-portrait.jpeg</image:loc>
+      <image:title>Priyanshi Srivastava - Founder of Jal Setu &amp; Software Engineer</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://priyanshi-portfolio-3.vercel.app/#jal-setu-founder</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://priyanshi-portfolio-3.vercel.app/#projects</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://priyanshi-portfolio-3.vercel.app/#articles</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
