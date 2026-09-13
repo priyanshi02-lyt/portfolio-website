@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=3.1">
+  <link rel="stylesheet" href="style.css?v=4.0">
   <link rel="stylesheet" href="enhancements.css">
   <link rel="stylesheet" href="motion.css">
   <meta name="description" content="Priyanshi Srivastava — Software Engineer and BCA student. Full-stack development, AI &amp; ML, computer vision, data analytics, and interactive web architecture.">
@@ -59,6 +59,7 @@
   <nav>
     <a href="#home">Home</a>
     <a href="#about">About</a>
+    <a href="#jal-setu-founder" class="nav-founder-link">⭐ Founder: Jal Setu</a>
     <a href="#roadmap">Expertise</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
@@ -67,6 +68,9 @@
     <a href="#contact">Contact</a>
   </nav>
   <div class="header-tools">
+    <a class="pill founder-pill" href="#jal-setu-founder" aria-label="Founder of Jal Setu">
+      <span class="pulse-dot"></span> Founder: Jal Setu
+    </a>
     <button id="theme-toggle" class="pill" type="button" aria-label="Switch to light mode">☀ Light</button>
     <a class="pill light" href="#resume">Request resume ↗</a>
   </div>
@@ -175,6 +179,99 @@
       </div>
     </div>
   </section>
+  <!-- Jal Setu (AquaAlert) Founder & Vision Spotlight -->
+  <section class="founder-spotlight" id="jal-setu-founder">
+    <div class="founder-container">
+      <div class="founder-header">
+        <div class="founder-badge-row">
+          <span class="founder-tag">⭐ FOUNDER &amp; LEAD ARCHITECT</span>
+          <span class="label" style="margin:0;">// CIVIC TECH REVOLUTION</span>
+          <span class="label" style="margin:0; color:#10b981;">// IN COLLABORATION WITH JAL NIGAM</span>
+        </div>
+        <h2 class="parallax-elem" data-parallax-speed="-0.08" style="font-size: clamp(2rem, 3.5vw, 3.8rem); line-height: 1.05; letter-spacing: -0.04em; margin-bottom: 12px;">
+          Jal Setu (AquaAlert): <em>The Vision for Zero Water Waste</em>
+        </h2>
+        <p class="sub parallax-elem" data-parallax-speed="-0.04" style="max-width: 820px; font-size: 15px; line-height: 1.6; color: var(--muted);">
+          How engineering, citizen empowerment, and automated municipal triage unite to preserve billions of liters of clean drinking water across India.
+        </p>
+      </div>
+
+      <!-- Hero Manifesto Card -->
+      <div class="founder-hero-card">
+        <div class="founder-manifesto">
+          <blockquote class="manifesto-quote">
+            "Every single day, millions of liters of clean, treated drinking water gush into roadside gutters from broken municipal pipelines, while nearby households face acute shortages. Jal Setu was founded on a singular conviction: citizen vigilance paired with intelligent geospatial triage can bridge the divide between citizens and municipal authorities. We don't merely log grievances—we eliminate duplicate noise, prioritize emergency dispatches, and safeguard our nation's most sacred resource."
+          </blockquote>
+          <div class="manifesto-author">
+            <img src="public/assets/about-portrait.jpeg" alt="Priyanshi Srivastava" class="author-avatar">
+            <div class="author-details">
+              <b>Priyanshi Srivastava</b>
+              <span>FOUNDER &amp; LEAD ARCHITECT • JAL SETU</span>
+            </div>
+          </div>
+        </div>
+        <div class="founder-preview-box">
+          <img src="public/assets/projects/aquaalert.jpg" alt="Jal Setu Civic Water Monitoring Dashboard" decoding="async">
+        </div>
+      </div>
+
+      <!-- 4 Architectural Pillars -->
+      <div class="founder-pillars-grid">
+        <article class="pillar-card">
+          <span class="pillar-num">// PILLAR 01</span>
+          <h4>Hyper-Local Citizen Reporting</h4>
+          <p>Instant 15-second geo-tagged incident logging with high-precision GPS coordinates, photo capture, and leak category classification with zero bureaucratic friction.</p>
+        </article>
+
+        <article class="pillar-card">
+          <span class="pillar-num">// PILLAR 02</span>
+          <h4>Geospatial Clustering &amp; Triage</h4>
+          <p>Autonomous spatial algorithms aggregate multiple citizen sightings of the same pipe burst into a single actionable incident dossier, eliminating duplicate notification fatigue.</p>
+        </article>
+
+        <article class="pillar-card">
+          <span class="pillar-num">// PILLAR 03</span>
+          <h4>Gamified "Jal Karma" Model</h4>
+          <p>Incentivizes civic responsibility by rewarding verified reporters with Jal Karma points, community impact badges, and municipal recognition leaderboards.</p>
+        </article>
+
+        <article class="pillar-card">
+          <span class="pillar-num">// PILLAR 04</span>
+          <h4>Jal Nigam Command Telemetry</h4>
+          <p>Dedicated administrative dispatch console featuring dynamic severity scoring, repair crew geolocation routing, SLA tracking, and public proof-of-resolution audits.</p>
+        </article>
+      </div>
+
+      <!-- Impact Metrics Strip -->
+      <div class="founder-impact-strip">
+        <div class="impact-metric">
+          <strong>0L</strong>
+          <span>CLEAN WATER WASTE TOLERANCE</span>
+        </div>
+        <div class="impact-metric">
+          <strong>&lt; 2h</strong>
+          <span>EMERGENCY DISPATCH TARGET</span>
+        </div>
+        <div class="impact-metric">
+          <strong>15s</strong>
+          <span>AVG CITIZEN REPORTING TIME</span>
+        </div>
+        <div class="impact-metric">
+          <strong>100%</strong>
+          <span>INCIDENT LIFECYCLE AUDITABILITY</span>
+        </div>
+      </div>
+
+      <!-- Action Buttons Bar -->
+      <div class="founder-actions-bar">
+        <a href="https://aqualert-jal-setu.vercel.app" target="_blank" rel="noopener noreferrer" class="pill light" style="padding: 10px 22px; font-weight: 700; font-size: 13px;">Launch Jal Setu Platform ↗</a>
+        <a href="https://aqualert-jal-setu.vercel.app" target="_blank" rel="noopener noreferrer" class="pill" style="padding: 10px 22px; font-weight: 700; font-size: 13px; border-color: #10b981; color: #10b981;">Report Roadside Leakage ↗</a>
+        <a href="https://github.com/priyanshi02-lyt" target="_blank" rel="noopener noreferrer" class="pill" style="padding: 10px 22px; font-size: 13px;">View GitHub Architecture ↗</a>
+        <a href="#articles" class="pill" style="padding: 10px 22px; font-size: 13px;">Read Civic IoT Essay ↗</a>
+      </div>
+    </div>
+  </section>
+
 
   <!-- Core Execution Root Map (From Reference Video Frame 25) -->
   <section class="roadmap" id="roadmap">
@@ -629,6 +726,6 @@
 <script src="lenis.min.js"></script>
 <script src="script.js"></script>
 <script src="enhancements.js"></script>
-<script src="motion.js?v=3.1"></script>
+<script src="motion.js?v=4.0"></script>
 </body>
 </html>
