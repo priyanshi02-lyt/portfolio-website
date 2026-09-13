@@ -1,39 +1,55 @@
-# Token/cost optimization — runnable submission
+# Priyanshi Srivastava - 360° Interactive Developer Portfolio
 
-This is a dependency-free demonstration for an agent pipeline that sends roughly
-100K input tokens per request. Run it with:
+Live Production Site: [https://priyanshi-portfolio-3.vercel.app](https://priyanshi-portfolio-3.vercel.app)
 
-```powershell
-powershell -ExecutionPolicy Bypass -File .\token_optimization_demo.ps1
+An interactive, dark-mode software engineer and creative technologist portfolio featuring continuous 360-degree interactive portrait rotation, multi-plane kinetic typography parallax, and fluid sub-pixel inertia smooth scrolling.
+
+---
+
+## Highlights & Features
+
+- **360° Rotating Portrait Engine**:
+  - Full transparent subject multi-angle rotation (8 continuous isometric & profile perspectives: 0°, 45°, 90°, 135°, 180°, 225°, 270°, 315°).
+  - High-performance 60fps/120fps HTML5 Canvas cross-dissolve with Hermite smoothstep interpolation.
+  - Interactive scrub controls: Scroll-velocity driven scrubbing, touch/drag rotational spin, and idle auto-rotation.
+- **Scroll-Driven Kinetic Typography Parallax**:
+  - 3D cosine-eased parallax shifting across synchronized roles (*Creative Developer*, *Full Stack Dev*, *Scalable Systems*, *AI & ML Engineer*).
+  - Multi-plane Z-axis depth tracking on section headers, execution roots, and dynamic background particle orbs.
+- **Lenis Fluid Inertia Scrolling**:
+  - Replaces discrete 100px mousewheel notches with smooth sub-pixel exponential deceleration (`2^(-10t)`).
+  - Smooth anchor link navigation and synchronized scroll animations.
+- **Terminal Dispatch & System Status**:
+  - Real-time interactive command terminal with command history and instant output.
+  - Live status indicators, UTC time clock, and cybernetic telemetry nodes.
+- **Responsive & Accessible**:
+  - Mobile touch gestures, accessible semantic markup, ARIA labels, and responsive layout across all screen sizes.
+
+---
+
+## Tech Stack
+
+- **Frontend**: HTML5, Vanilla CSS3 (Custom Design System & Neon Glassmorphism), Vanilla JavaScript ES6+
+- **Animation & Physics**: Lenis Smooth Scroll, HTML5 2D Canvas, Web Animations API
+- **Deployment**: Vercel (Edge Network) & GitHub
+
+---
+
+## Getting Started Locally
+
+Clone the repository:
+```bash
+git clone https://github.com/priyanshi02-lyt/portfolio-website.git
+cd portfolio-website
 ```
 
-## What was implemented
+Serve with any static file server:
+```bash
+python -m http.server 8080
+```
+Open `http://localhost:8080` in your web browser.
 
-1. **Retrieval + context packing.** The baseline includes every policy. The
-   optimized pipeline ranks policies using the query and includes only the
-   top relevant evidence, clipped to the amount needed for the answer.
-   *Quality tradeoff:* a weak retriever can omit evidence. Mitigate with hybrid
-   retrieval, a minimum score threshold, citations, and a fallback retrieval
-   pass when confidence is low.
+---
 
-2. **Tool/state compaction and deduplication.** The baseline preserves raw tool
-   transcripts (including repeated searches/reads). The optimized path retains
-   only the intent, confidence, and unique consulted references.
-   *Quality tradeoff:* compact state can lose forensic detail. Keep full logs
-   outside the model context with a pointer/id and expand them only when needed.
+## License & Attribution
 
-## Sample result
-
-The PowerShell script measures the exact strings it constructs using a portable regex token
-estimate (not a provider tokenizer). It also checks that the optimized prompt
-contains the required refund evidence and produces the same deterministic answer
-as the baseline.
-
-For production, replace `Get-TokenEstimate` with the tokenizer for the chosen
-model and run the same comparison over a representative, labelled evaluation
-set. Gate deployment on answer quality (e.g. grounded-answer score and task
-success rate) as well as token reduction.
-
-The demo data is deliberately small; the percentage reduction is the meaningful
-result. At 100K baseline tokens/query, applying the observed percentage would
-bring the average request to approximately `100,000 × (1 − reduction)` tokens.
+Designed and developed by [Priyanshi Srivastava](https://github.com/priyanshi02-lyt). All rights reserved.

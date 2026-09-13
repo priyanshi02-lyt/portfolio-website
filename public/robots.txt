@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://priyanshi-srivastava-portfolio.vercel.app/sitemap.xml

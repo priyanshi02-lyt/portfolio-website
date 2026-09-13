@@ -1,1 +1,4 @@
-{"$schema":"https://openapi.vercel.sh/vercel.json","framework":null,"buildCommand":"npm run build","outputDirectory":"dist/client","headers":[{"source":"/Priyanshi-Srivastava-CV.pdf","headers":[{"key":"X-Robots-Tag","value":"noindex"}]}]}
+{
+  "cleanUrls": true,
+  "outputDirectory": "."
+}

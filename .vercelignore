@@ -1,8 +1,6 @@
-.openai
-outputs
-dist
-.wrangler
-.vinext
-work
-.git
-*.tsbuildinfo
+﻿public/assets/reference.mp4
+public.zip
+*.zip
+reference-frames/
+tmp/
+.git/

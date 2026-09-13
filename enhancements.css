@@ -1,0 +1,15 @@
+/* Micro-interactions & Visual Polish */
+.motion-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1) var(--delay, 0ms),
+              transform 0.65s cubic-bezier(0.16, 1, 0.3, 1) var(--delay, 0ms);
+}
+.motion-reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 4px;
+}

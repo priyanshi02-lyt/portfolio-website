@@ -1,9 +1,0 @@
-import type { Metadata } from 'next';
-import './globals.css';
-const title='Priyanshi Srivastava | Software Engineer';
-const description='Priyanshi Srivastava is a software engineer and BCA student at ITM GIDA, Gorakhpur. Explore her projects in web development, deepfake face and speech detection, AI, and data analytics.';
-const host=process.env.SITE_URL || (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : undefined);
-export const metadata: Metadata = {title,description,...(host?{metadataBase:new URL(host),alternates:{canonical:host}}:{}),authors:[{name:'Priyanshi Srivastava'}],robots:{index:true,follow:true},icons:{icon:'/favicon.svg'},openGraph:{title,description,type:'website',siteName:'Priyanshi Srivastava',...(host?{url:host}:{}),images:[{url:'/og.png',alt:'Priyanshi Srivastava — Software Engineer · AI & Data Enthusiast'}]},twitter:{card:'summary_large_image',title,description,images:['/og.png']}};
-const person={'@context':'https://schema.org','@type':'Person',name:'Priyanshi Srivastava',jobTitle:'Software Engineer',description,sameAs:['https://github.com/priyanshi02-lyt','https://www.linkedin.com/in/priyanshi-srivastava-bb6a36421/'],...(host?{url:host,image:`${host}/images/priyanshi-portrait.jpeg`}:{}),address:{'@type':'PostalAddress',addressLocality:'Gorakhpur',addressRegion:'Uttar Pradesh',addressCountry:'IN'},alumniOf:{'@type':'EducationalOrganization',name:'Institute of Technology and Management, GIDA'}};
-export default function RootLayout({children}:{children:React.ReactNode}) {return <html lang="en"><body><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(person).replace(/</g,'\\u003c')}}/>{host&&<script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({'@context':'https://schema.org','@type':'WebSite',name:'Priyanshi Srivastava',url:host}).replace(/</g,'\\u003c')}}/>}{children}</body></html>}
-
