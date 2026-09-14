@@ -8,12 +8,12 @@
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://priyanshi-portfolio-3.vercel.app/public/assets/projects/aquaalert.jpg</image:loc>
-      <image:title>Jal Setu AquaAlert Civic Water Leakage Watchdog by Priyanshi Srivastava</image:title>
-      <image:caption>Jal Setu Smart Civic-Tech Platform Dashboard and Municipal Jal Nigam Triage</image:caption>
+      <image:title>Civic Snap Aqua Alert Civic Water Leakage Watchdog by Priyanshi Srivastava</image:title>
+      <image:caption>Civic Snap Aqua Alert Smart Civic-Tech Platform Dashboard and Municipal Jal Nigam Triage</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://priyanshi-portfolio-3.vercel.app/public/assets/about-portrait.jpeg</image:loc>
-      <image:title>Priyanshi Srivastava - Founder of Jal Setu and Software Engineer</image:title>
+      <image:title>Priyanshi Srivastava - Founder of Civic Snap Aqua Alert and Software Engineer</image:title>
     </image:image>
   </url>
 </urlset>
