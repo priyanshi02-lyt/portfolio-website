@@ -3,17 +3,22 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://priyanshi-portfolio-3.vercel.app/</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://priyanshi-portfolio-3.vercel.app/public/assets/projects/aquaalert.jpg</image:loc>
-      <image:title>Civic Snap Aqua Alert Civic Water Leakage Watchdog by Priyanshi Srivastava</image:title>
-      <image:caption>Civic Snap Aqua Alert Smart Civic-Tech Platform Dashboard and Municipal Jal Nigam Triage</image:caption>
+      <image:title>Civic Snap Civic Water Leakage Watchdog by Priyanshi Srivastava</image:title>
+      <image:caption>Civic Snap Smart Civic-Tech Platform Dashboard and Municipal Jal Nigam Triage</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://priyanshi-portfolio-3.vercel.app/public/assets/about-portrait.jpeg</image:loc>
-      <image:title>Priyanshi Srivastava - Founder of Civic Snap Aqua Alert and Software Engineer</image:title>
+      <image:title>Priyanshi Srivastava - Founder of Civic Snap and Software Engineer</image:title>
+    </image:image>
+      <image:image>
+      <image:loc>https://priyanshi-portfolio-3.vercel.app/public/assets/projects/ambey-supply.jpg</image:loc>
+      <image:title>Ambey Supply Company Industrial Tools and Hardware Hub</image:title>
+      <image:caption>Ambey Supply Company B2B Industrial Supply Platform by Priyanshi Srivastava</image:caption>
     </image:image>
   </url>
 </urlset>
