@@ -2,7 +2,7 @@
 
 Live Production Site: [https://priyanshi-portfolio-3.vercel.app](https://priyanshi-portfolio-3.vercel.app)
 
-An interactive, dark-mode software engineer and creative technologist portfolio featuring continuous 360-degree interactive portrait rotation, multi-plane kinetic typography parallax, and fluid sub-pixel inertia smooth scrolling.
+An interactive, dark-mode aspiring software engineer and creative technologist portfolio featuring continuous 360-degree interactive portrait rotation, multi-plane kinetic typography parallax, and fluid sub-pixel inertia smooth scrolling.
 
 ---
 
