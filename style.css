@@ -1714,3 +1714,268 @@ body.light-mode .pill.light {
     border-bottom: none;
   }
 }
+
+/* ANI Interview & Spotlight Section */
+.ani-spotlight-section {
+  position: relative;
+  padding: 100px 5vw 90px;
+  border-top: 1px solid var(--line);
+  background: radial-gradient(circle at 85% 20%, rgba(239, 68, 68, 0.08), transparent 60%),
+              radial-gradient(circle at 15% 80%, rgba(245, 158, 11, 0.05), transparent 50%),
+              #0d0d12;
+  overflow: hidden;
+}
+
+.ani-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ani-header {
+  margin-bottom: 40px;
+}
+
+.ani-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.ani-tag {
+  font: 10px 'DM Mono', monospace;
+  letter-spacing: 0.12em;
+  padding: 4px 10px;
+  border-radius: 99px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ani-tag.live {
+  border-color: rgba(239, 68, 68, 0.5);
+  background: rgba(239, 68, 68, 0.12);
+  color: #fca5a5;
+  font-weight: 700;
+}
+
+.ani-tag.verified {
+  border-color: rgba(16, 185, 129, 0.4);
+  background: rgba(16, 185, 129, 0.08);
+  color: #6ee7b7;
+}
+
+.ani-pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ef4444;
+  box-shadow: 0 0 8px #ef4444;
+  display: inline-block;
+}
+
+.ani-lead-text {
+  font-size: clamp(1rem, 1.25vw, 1.15rem);
+  line-height: 1.6;
+  color: var(--muted);
+  max-width: 780px;
+  margin-top: 10px;
+}
+
+.ani-hero-card {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 36px;
+  background: linear-gradient(145deg, rgba(24, 20, 24, 0.9), rgba(14, 12, 16, 0.96));
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  border-radius: 24px;
+  padding: 36px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.6), 0 0 30px rgba(239, 68, 68, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.ani-hero-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #ef4444, #f59e0b, #ec4899);
+}
+
+.ani-video-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ani-video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #000;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+}
+
+.ani-video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ani-video-live-pill {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 12px;
+  border-radius: 99px;
+  background: rgba(10, 10, 15, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(239, 68, 68, 0.5);
+  color: #fff;
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  pointer-events: none;
+}
+
+.ani-video-caption {
+  padding: 16px 8px 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.ani-caption-meta strong {
+  display: block;
+  font-size: 13.5px;
+  color: #f1f5f9;
+}
+
+.ani-caption-meta span {
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.ani-content-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 22px;
+}
+
+.ani-quote-box {
+  position: relative;
+  padding: 22px 24px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: 3px solid #ef4444;
+  border-radius: 0 16px 16px 0;
+}
+
+.ani-quote-icon {
+  position: absolute;
+  top: 10px;
+  right: 18px;
+  font-size: 48px;
+  line-height: 1;
+  color: rgba(239, 68, 68, 0.15);
+  font-family: serif;
+  user-select: none;
+}
+
+.ani-quote {
+  font-size: clamp(0.95rem, 1.15vw, 1.05rem);
+  line-height: 1.65;
+  color: #e2e8f0;
+  font-style: italic;
+  margin: 0 0 14px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.ani-quote-author strong {
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+
+.ani-quote-author span {
+  font-size: 11px;
+  font-family: 'DM Mono', monospace;
+  color: #94a3b8;
+}
+
+.ani-project-callout {
+  padding: 20px 22px;
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.08), rgba(245, 158, 11, 0.04));
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  border-radius: 16px;
+}
+
+.ani-callout-badge {
+  font: 10px 'DM Mono', monospace;
+  letter-spacing: 0.12em;
+  color: #f87171;
+  margin-bottom: 6px;
+}
+
+.ani-project-callout h4 {
+  font-size: 1.15rem;
+  margin: 0 0 8px 0;
+  color: #f8fafc;
+  letter-spacing: -0.02em;
+}
+
+.ani-project-callout p {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--muted);
+  margin: 0 0 14px 0;
+}
+
+.ani-callout-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.ani-callout-specs span {
+  font: 10.5px 'DM Mono', monospace;
+  color: #cbd5e1;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 3px 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ani-callout-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .ani-hero-card {
+    grid-template-columns: 1fr;
+    gap: 26px;
+    padding: 24px;
+  }
+}
