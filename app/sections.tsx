@@ -8,8 +8,18 @@ const github = 'https://github.com/priyanshi02-lyt';
 
 const work = [
   {
+    name: 'Durga Shakti Gun — Smart Women Safety & Defense System (IoT)',
+    tag: 'IOT DEFENSE / 01 • ANI SPOTLIGHT',
+    badge: '🏆 ANI NATIONAL MEDIA SPOTLIGHT',
+    description: 'Smart self-defense and personal protection system engineered with IoT technology. Features an integrated microprocessor, instant emergency panic trigger, GPS location tracking telemetry, and cellular base-station distress dispatch. Designed to protect women and soldiers in high-risk emergency situations, spotlighted nationally by Asian News International (ANI) from ITM GIDA.',
+    skills: ['IoT Technology', 'Microprocessor / Arduino', 'GPS Telemetry', 'Personal Defense Tech', 'ANI Media Spotlight', 'Hardware Prototyping'],
+    liveUrl: 'https://x.com/ANI/status/1953819734060798014',
+    image: '/images/project-durga-shakti-gun.jpg',
+    platform: 'ANI MEDIA'
+  },
+  {
     name: 'AquaAlert (Jal Setu) — Civic Water Leakage Watchdog & Grievance Grid',
-    tag: 'CIVIC TECH / 01 • 🔒 UPCOMING',
+    tag: 'CIVIC TECH / 02 • 🔒 UPCOMING',
     badge: '🔒 JAL NIGAM UPCOMING RELEASE',
     description: 'Current flagship civic-tech initiative in active development for municipal deployment with Jal Nigam & Nagar Nigam. Empowers citizens to report roadside pipeline leakages, earn Jal Karma rewards, and assist municipal authorities with automated duplicate clustering and grievance triage.',
     skills: ['Jal Nigam Municipal Pilot', 'Active Development', 'Civic Tech', 'Leaflet.js Geolocation', 'Automated Triage', 'Gamified Rewards'],
@@ -20,7 +30,7 @@ const work = [
   },
   {
     name: 'NorthStar Academy Student & Academic Portal 2026',
-    tag: 'ED-TECH / 02',
+    tag: 'ED-TECH / 03',
     badge: 'ACADEMY • AUTH & PORTAL',
     description: 'Modern, secure academic learning and student authentication portal for Northstar Academy, featuring personalized student access, curriculum dashboards, and digital campus resources.',
     skills: ['Ed-Tech', 'Student Portal', 'Authentication UI', 'Responsive Design', 'Netlify'],
@@ -30,7 +40,7 @@ const work = [
   },
   {
     name: 'All-in-One Media & Networking Solutions Hub',
-    tag: 'NETWORKING / 03',
+    tag: 'NETWORKING / 04',
     badge: 'MEDIA • COLLABORATION',
     description: 'Dynamic media networking and collaboration hub connecting digital creators, content producers, and media agencies for portfolio showcasing, project collaboration, and talent discovery.',
     skills: ['Media Platforms', 'Creative Networking', 'Glassmorphism', 'Netlify', 'Interactive UI'],
@@ -40,7 +50,7 @@ const work = [
   },
   {
     name: 'KPMCET College Official Web Portal',
-    tag: 'INSTITUTIONAL / 04',
+    tag: 'INSTITUTIONAL / 05',
     badge: 'CAMPUS • ACADEMICS',
     description: 'Modern, responsive institutional web portal for KPMCET featuring interactive department guides, academic curriculum showcases, digital prospectus, and administrative notices.',
     skills: ['Web Architecture', 'Responsive UI', 'Academic Portals', 'Performance Optimization', 'Vercel'],
@@ -50,7 +60,7 @@ const work = [
   },
   {
     name: 'National Convent School Digital Campus Platform',
-    tag: 'EDUCATION / 05',
+    tag: 'EDUCATION / 06',
     badge: 'CAMPUS • ED-TECH',
     description: 'Official digital campus platform for National Convent School (Rampur Bawli) modernizing student admissions, parent communications, academic showcases, and campus galleries.',
     skills: ['Web Design', 'Educational Tech', 'CSS Layouts', 'Cross-browser Compatibility', 'Vercel'],
@@ -60,7 +70,7 @@ const work = [
   },
   {
     name: 'Innovative Corporate Services & Consulting Experience',
-    tag: 'CORPORATE / 06',
+    tag: 'CORPORATE / 07',
     badge: 'B2B • CONSULTING',
     description: 'Sleek, high-converting corporate landing experience built for modern technology and business consulting services, featuring smooth scroll interactions and service inquiry funnels.',
     skills: ['Corporate Web Design', 'Conversion Rate Optimization', 'Dark Mode UI', 'SEO', 'Vercel'],
@@ -70,7 +80,7 @@ const work = [
   },
   {
     name: 'Deepfake Face and Speech Detection',
-    tag: 'AI & ML / 07',
+    tag: 'AI & ML / 08',
     badge: 'FACE + SPEECH AI',
     description: 'A deep learning system focused on identifying manipulated facial media and synthetic voice clones, analyzing forensic visual and audio frequency patterns.',
     skills: ['Deepfake Detection', 'Python', 'OpenCV', 'TensorFlow', 'Librosa'],
@@ -80,7 +90,7 @@ const work = [
   },
   {
     name: 'Responsive Image Gallery',
-    tag: 'INTERFACE / 08',
+    tag: 'INTERFACE / 09',
     badge: 'PHOTOGRAPHY UI',
     description: 'Fluid layouts, interactive hover effects, filtering, and lightbox modal browsing experience built with modern CSS and vanilla JavaScript.',
     skills: ['HTML5', 'CSS3', 'JavaScript', 'Lightbox UI', 'Responsive Design'],
@@ -231,6 +241,8 @@ export function PortfolioSections() {
       {/* Marquee Ticker 1: Sideways Scrolling Tech Highlights */}
       <div className="ticker-strip">
         <div className="ticker-track">
+          <span className="ticker-item"><i>✦</i> 🏆 ANI NATIONAL INTERVIEW SPOTLIGHT</span>
+          <span className="ticker-item"><i>✦</i> 🛡️ DURGA SHAKTI GUN (IOT WOMEN SAFETY)</span>
           <span className="ticker-item"><i>✦</i> CIVIC TECH INNOVATION</span>
           <span className="ticker-item"><i>✦</i> FULL-STACK WEB APPS</span>
           <span className="ticker-item"><i>✦</i> AI & MACHINE LEARNING</span>
@@ -238,6 +250,8 @@ export function PortfolioSections() {
           <span className="ticker-item"><i>✦</i> RESPONSIVE UI / UX</span>
           <span className="ticker-item"><i>✦</i> CLOUD DEPLOYMENTS</span>
           <span className="ticker-item"><i>✦</i> DATA ANALYTICS & PYTHON</span>
+          <span className="ticker-item"><i>✦</i> 🏆 ANI NATIONAL INTERVIEW SPOTLIGHT</span>
+          <span className="ticker-item"><i>✦</i> 🛡️ DURGA SHAKTI GUN (IOT WOMEN SAFETY)</span>
           <span className="ticker-item"><i>✦</i> CIVIC TECH INNOVATION</span>
           <span className="ticker-item"><i>✦</i> FULL-STACK WEB APPS</span>
           <span className="ticker-item"><i>✦</i> AI & MACHINE LEARNING</span>
@@ -249,19 +263,60 @@ export function PortfolioSections() {
       </div>
 
       <section id="highlight" className="section press-section">
-        <Label>FEATURED // ANI INTERVIEW</Label>
-        <article className="press-feature reveal-up">
-          <div className="press-badge">
-            <strong>ANI</strong>
-            <span>MEDIA HIGHLIGHT</span>
+        <Label>FEATURED // NATIONAL MEDIA COVERAGE</Label>
+        <article className="press-feature reveal-up" style={{ gridTemplateColumns: '1fr 1fr', gap: '36px' }}>
+          <div className="press-video-col">
+            <div className="press-video-container">
+              <video
+                controls
+                playsInline
+                preload="metadata"
+                poster="/images/ani_interview_thumb.jpg"
+                src="/videos/ani_interview.mp4"
+                className="press-video-elem"
+              />
+              <div className="press-live-tag">
+                <span className="pulse-dot" style={{ background: '#ef4444', boxShadow: '0 0 10px #ef4444' }} />
+                <span>ANI ON-CAMERA INTERVIEW</span>
+              </div>
+            </div>
+            <div className="press-video-meta">
+              <div>
+                <strong>Asian News International (ANI)</strong>
+                <span>Gorakhpur, UP · ITM GIDA Campus Feature</span>
+              </div>
+              <a
+                href="https://x.com/ANI/status/1953819734060798014"
+                target="_blank"
+                rel="noreferrer"
+                className="press-x-link"
+              >
+                On X ↗
+              </a>
+            </div>
           </div>
           <div className="press-copy">
-            <div className="availability">INTERNET OF THINGS • PROJECT SPOTLIGHT</div>
-            <h2>From an idea<br /><span>to an ANI interview.</span></h2>
-            <p>A major highlight in my journey: speaking with ANI about my Internet of Things (IoT) project. An opportunity to share my work and the ideas behind it with a wider audience.</p>
-            <a className="primary-link" href="https://x.com/ANI/status/1953819734060798014" target="_blank" rel="noreferrer">
-              View the ANI interview on X <ArrowUpRight size={18} />
-            </a>
+            <div className="availability">
+              <i style={{ background: '#ef4444', boxShadow: '0 0 8px #ef4444' }} /> ASIAN NEWS INTERNATIONAL (ANI) INTERVIEW
+            </div>
+            <h2 style={{ fontSize: 'clamp(1.75rem, 2.5vw, 2.4rem)', lineHeight: 1.15, marginTop: '8px', marginBottom: '14px' }}>
+              From an IoT innovation<br /><span>to an ANI national interview.</span>
+            </h2>
+            <blockquote className="press-quote">
+              "Our aim behind making this is to protect our soldiers and women, and just as defense and everyday safety are getting digital, this is an initiative to help remotely operate systems. We have installed a GPS, microprocessor, and other necessary components... so that it can help contact the base station if they need help or get injured. We have also installed a trigger button, enabling them to operate defense systems from a distance."
+              <cite>— Priyanshi Srivastava, speaking with ANI at ITM GIDA</cite>
+            </blockquote>
+            <p style={{ fontSize: '14px', lineHeight: 1.6, color: 'var(--muted-foreground)', marginBottom: '20px' }}>
+              Spotlighted nationally on television and digital media by <strong>Asian News International (ANI)</strong>, demonstrating my IoT defense innovations including the <strong>Durga Shakti Gun</strong> for women's personal safety and emergency remote deterrence.
+            </p>
+            <div className="press-actions">
+              <a className="primary-link" href="https://x.com/ANI/status/1953819734060798014" target="_blank" rel="noreferrer" style={{ background: '#ef4444', borderColor: '#ef4444', color: '#fff' }}>
+                View ANI Broadcast on X <ArrowUpRight size={18} />
+              </a>
+              <a className="text-link" href="#projects">
+                View Project Details <ArrowDown size={16} />
+              </a>
+            </div>
           </div>
         </article>
       </section>
@@ -347,7 +402,7 @@ export function PortfolioSections() {
           <a href="#projects" className="option-pill">
             <span className="pill-emoji">💻</span>
             <span>Projects</span>
-            <span className="pill-badge">8</span>
+            <span className="pill-badge">9</span>
           </a>
           <a href="#articles" className="option-pill active-articles">
             <span className="pill-emoji">✍️</span>
@@ -375,6 +430,8 @@ export function PortfolioSections() {
       {/* Marquee Ticker 2: Reverse Sideways Motion into Projects */}
       <div className="ticker-strip">
         <div className="ticker-track-reverse">
+          <span className="ticker-item"><i>✦</i> 🛡️ DURGA SHAKTI GUN (IOT WOMEN SAFETY)</span>
+          <span className="ticker-item"><i>✦</i> 🏆 ANI NATIONAL SPOTLIGHT</span>
           <span className="ticker-item"><i>✦</i> 🔒 AQUAALERT (JAL SETU) — UPCOMING JAL NIGAM</span>
           <span className="ticker-item"><i>✦</i> NORTHSTAR ACADEMY PORTAL</span>
           <span className="ticker-item"><i>✦</i> ALL-IN-ONE MEDIA & NETWORKING</span>
@@ -429,7 +486,11 @@ export function PortfolioSections() {
                   )}
                   <div className="project-img-overlay">
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                      {w.locked || w.platform === 'UPCOMING' ? (
+                      {w.platform === 'ANI MEDIA' ? (
+                        <span className="project-live-tag" style={{ background: 'rgba(239, 68, 68, 0.25)', borderColor: 'rgba(239, 68, 68, 0.7)', color: '#fca5a5' }}>
+                          <span className="pulse-dot" style={{ background: '#ef4444', boxShadow: '0 0 10px #ef4444' }} /> ⭐ ANI SPOTLIGHT
+                        </span>
+                      ) : w.locked || w.platform === 'UPCOMING' ? (
                         <span className="project-live-tag" style={{ background: 'rgba(245, 158, 11, 0.25)', borderColor: 'rgba(251, 191, 36, 0.7)', color: '#fef08a' }}>
                           <span className="pulse-dot" style={{ background: '#f59e0b', boxShadow: '0 0 10px #f59e0b' }} /> 🔒 UPCOMING • JAL NIGAM
                         </span>
@@ -865,10 +926,13 @@ export function PortfolioSections() {
                       padding: '11px 22px',
                       borderRadius: '99px',
                       textDecoration: 'none',
-                      fontWeight: '700'
+                      fontWeight: '700',
+                      background: work[project].platform === 'ANI MEDIA' ? '#ef4444' : undefined,
+                      borderColor: work[project].platform === 'ANI MEDIA' ? '#ef4444' : undefined,
+                      color: work[project].platform === 'ANI MEDIA' ? '#fff' : undefined
                     }}
                   >
-                    Launch Live Web Application <ArrowUpRight size={16} />
+                    {work[project].platform === 'ANI MEDIA' ? 'Watch Official ANI Broadcast on X' : 'Launch Live Web Application'} <ArrowUpRight size={16} />
                   </a>
                 </div>
               )}

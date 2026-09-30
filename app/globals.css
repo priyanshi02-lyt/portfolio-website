@@ -704,3 +704,126 @@
   -webkit-user-drag: none !important;
   pointer-events: none !important;
 }
+
+/* ANI Interview & Media Video Showcase */
+.press-video-col {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--background);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+}
+
+.press-video-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  overflow: hidden;
+}
+
+.press-video-elem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.press-live-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 12px;
+  border-radius: 99px;
+  background: rgba(10, 10, 15, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(239, 68, 68, 0.5);
+  color: #fff;
+  font-family: monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.press-video-meta {
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--border);
+  background: var(--muted);
+  gap: 12px;
+}
+
+.press-video-meta strong {
+  display: block;
+  font-size: 13px;
+  color: var(--foreground);
+}
+
+.press-video-meta span {
+  font-size: 11.5px;
+  color: var(--muted-foreground);
+}
+
+.press-x-link {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ef4444;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.press-x-link:hover {
+  background: #ef4444;
+  color: #fff;
+}
+
+.press-quote {
+  margin: 0 0 18px 0;
+  padding: 14px 18px;
+  border-left: 3px solid #ef4444;
+  background: var(--background);
+  border-radius: 0 8px 8px 0;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--foreground);
+  font-style: italic;
+}
+
+.press-quote cite {
+  display: block;
+  margin-top: 8px;
+  font-style: normal;
+  font-size: 11.5px;
+  color: var(--muted-foreground);
+  font-family: monospace;
+  letter-spacing: 0.5px;
+}
+
+.press-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .press-feature {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+    padding: 24px !important;
+  }
+}
