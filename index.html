@@ -38,7 +38,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="style.css?v=6.0">
+  <link rel="stylesheet" href="style.css?v=7.0">
   <link rel="stylesheet" href="enhancements.css">
   <link rel="stylesheet" href="motion.css">
 
@@ -255,10 +255,7 @@
           Official project work experience and certificates across software engineering, artificial intelligence, and frontend development. Each credential represents real-world systems delivery, industry mentorship, and verified technical rigor.
         </p>
         <div class="internships-action-bar">
-          <a href="public/assets/certificates/internship-certificates.pdf" target="_blank" rel="noopener noreferrer" class="pill light" style="padding: 9px 20px; font-weight: 700; font-size: 12px; background: #3b82f6; border-color: #3b82f6; color: #ffffff;">
-            Download All Verified Certificates (PDF) ↓
-          </a>
-          <a href="#experience" class="pill" style="padding: 9px 20px; font-size: 12px;">
+          <a href="#experience" class="pill light" style="padding: 9px 22px; font-weight: 700; font-size: 12px;">
             View Experience Timeline ↓
           </a>
         </div>
@@ -315,10 +312,7 @@
               Software Engineering • HTTPE Engine • Backend Architecture • Concurrency • Algorithmic Optimization
             </p>
 
-            <div class="internship-card-footer">
-              <button type="button" class="pill light open-cert-btn" data-cert="zetheta">Inspect Certificate ↗</button>
-              <a href="public/assets/certificates/zetheta-certificate.jpeg" download="Priyanshi_Zetheta_Certificate.jpeg" class="pill download-link">Download 📥</a>
-            </div>
+            <div class="internship-card-footer"><button type="button" class="pill light open-cert-btn" data-cert="zetheta" style="width: 100%; justify-content: center;">Inspect Certificate ↗</button></div>
           </div>
         </article>
 
@@ -370,10 +364,7 @@
               Frontend Architecture • HTML5 / CSS3 • JavaScript ES6+ • Responsive UI • Component Systems • MSME Certified
             </p>
 
-            <div class="internship-card-footer">
-              <button type="button" class="pill light open-cert-btn" data-cert="codealpha">Inspect Certificate ↗</button>
-              <a href="public/assets/certificates/codealpha-certificate.jpeg" download="Priyanshi_CodeAlpha_Certificate.jpeg" class="pill download-link">Download 📥</a>
-            </div>
+            <div class="internship-card-footer"><button type="button" class="pill light open-cert-btn" data-cert="codealpha" style="width: 100%; justify-content: center;">Inspect Certificate ↗</button></div>
           </div>
         </article>
 
@@ -425,10 +416,7 @@
               Artificial Intelligence • Deep Learning • Computer Vision • Model Evaluation • Predictive Systems • AICTE Approved
             </p>
 
-            <div class="internship-card-footer">
-              <button type="button" class="pill light open-cert-btn" data-cert="codec">Inspect Certificate ↗</button>
-              <a href="public/assets/certificates/codec-technologies-certificate.jpeg" download="Priyanshi_Codec_Certificate.jpeg" class="pill download-link">Download 📥</a>
-            </div>
+            <div class="internship-card-footer"><button type="button" class="pill light open-cert-btn" data-cert="codec" style="width: 100%; justify-content: center;">Inspect Certificate ↗</button></div>
           </div>
         </article>
 
@@ -559,20 +547,36 @@
 
       <div class="ani-hero-card">
         <div class="ani-video-col">
-          <div class="ani-video-wrapper">
-            <video controls playsinline preload="metadata" poster="public/assets/ani_interview_thumb.jpg">
+          <div class="ani-video-wrapper" id="ani-video-box">
+            <video id="ani-interview-video" controls playsinline preload="metadata" poster="public/assets/ani_interview_thumb.jpg">
               <source src="public/assets/ani_interview.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <!-- Blur Overlay with Unblur Trigger -->
+            <div class="ani-video-blur-overlay" id="ani-blur-overlay" title="Click to unblur and watch interview">
+              <div class="ani-blur-badge">
+                <span>🔒</span>
+                <span>ANI National Broadcast</span>
+              </div>
+              <button type="button" class="ani-unblur-btn" id="ani-unblur-trigger">
+                ▶ Click to Unblur &amp; Watch Video
+              </button>
+              <span class="ani-blur-hint">National Television Interview · ITM GIDA Campus</span>
+            </div>
           </div>
           <div class="ani-video-caption">
             <div class="ani-caption-meta">
               <strong>Asian News International (ANI)</strong>
               <span>Broadcast from Institute of Technology &amp; Management (ITM GIDA), Gorakhpur</span>
             </div>
-            <a href="https://x.com/ANI/status/1953819734060798014" target="_blank" rel="noopener noreferrer" class="pill light" style="padding: 6px 14px; font-size: 11px; background: #ef4444; border-color: #ef4444; color: #fff;">
-              View on X ↗
-            </a>
+            <div style="display: flex; gap: 8px; align-items: center;">
+              <button type="button" class="ani-reblur-btn" id="ani-reblur-btn" style="display: none;" title="Re-blur video preview">
+                🔒 Re-blur
+              </button>
+              <a href="https://x.com/ANI/status/1953819734060798014" target="_blank" rel="noopener noreferrer" class="pill light" style="padding: 6px 14px; font-size: 11px; background: #ef4444; border-color: #ef4444; color: #fff;">
+                View on X ↗
+              </a>
+            </div>
           </div>
         </div>
 
@@ -971,10 +975,8 @@
           <!-- Populated dynamically via script.js -->
         </div>
       </div>
-      <div class="cert-modal-footer">
-        <a id="modal-download-img" href="" download class="pill light" style="padding: 8px 18px; font-size: 12px; background: #3b82f6; border-color: #3b82f6; color: #fff;">Download Certificate Image 📥</a>
-        <a href="public/assets/certificates/internship-certificates.pdf" target="_blank" rel="noopener noreferrer" class="pill" style="padding: 8px 18px; font-size: 12px;">Download Full PDF (3 Pages) ↗</a>
-        <button type="button" class="pill" id="modal-dismiss-btn" style="padding: 8px 18px; font-size: 12px;">Close</button>
+      <div class="cert-modal-footer" style="justify-content: flex-end;">
+        <button type="button" class="pill light" id="modal-dismiss-btn" style="padding: 9px 24px; font-size: 12px;">Close Preview ✕</button>
       </div>
     </div>
   </div>
@@ -982,7 +984,7 @@
 </main>
 
 <script src="lenis.min.js"></script>
-<script src="script.js?v=6.0"></script>
+<script src="script.js?v=7.0"></script>
 <script src="enhancements.js"></script>
 <script src="motion.js?v=4.0"></script>
 </body>

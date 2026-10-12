@@ -228,4 +228,41 @@
       updatePayload();
     });
   }
+
+  // ANI Video Blur / Unblur Controller
+  const aniWrapper = document.getElementById('ani-video-box') || document.querySelector('.ani-video-wrapper');
+  const aniVideo = document.getElementById('ani-interview-video') || (aniWrapper ? aniWrapper.querySelector('video') : null);
+  const aniOverlay = document.getElementById('ani-blur-overlay');
+  const aniUnblurBtn = document.getElementById('ani-unblur-trigger');
+  const aniReblurBtn = document.getElementById('ani-reblur-btn');
+
+  function unblurInterview() {
+    if (!aniWrapper) return;
+    aniWrapper.classList.add('unblurred');
+    if (aniReblurBtn) aniReblurBtn.style.display = 'inline-flex';
+    if (aniVideo && aniVideo.paused) {
+      aniVideo.play().catch(() => {});
+    }
+  }
+
+  function reblurInterview() {
+    if (!aniWrapper) return;
+    aniWrapper.classList.remove('unblurred');
+    if (aniReblurBtn) aniReblurBtn.style.display = 'none';
+    if (aniVideo && !aniVideo.paused) {
+      aniVideo.pause();
+    }
+  }
+
+  if (aniOverlay) aniOverlay.addEventListener('click', unblurInterview);
+  if (aniUnblurBtn) aniUnblurBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    unblurInterview();
+  });
+  if (aniVideo) aniVideo.addEventListener('play', unblurInterview);
+  if (aniReblurBtn) aniReblurBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    reblurInterview();
+  });
+
 })();
