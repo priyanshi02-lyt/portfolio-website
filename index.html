@@ -38,7 +38,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="style.css?v=7.0">
+  <link rel="stylesheet" href="style.css?v=8.0">
   <link rel="stylesheet" href="enhancements.css">
   <link rel="stylesheet" href="motion.css">
 
@@ -843,41 +843,230 @@
   </section>
 
   <!-- Credentials Section -->
-  <section id="credentials">
-    <p class="label parallax-elem" data-parallax-speed="-0.14">// LEARNING &amp; CREDENTIALS</p>
-    <h2 class="parallax-elem" data-parallax-speed="-0.08">Skills backed by verified learning.</h2>
-    <p class="sub parallax-elem" data-parallax-speed="-0.04">Official certificates, industry accreditations, and verified credentials.</p>
-    <div class="credential-grid">
-      <div class="credential-card" data-cert="zetheta" style="cursor: pointer;" data-parallax-speed="0.05">
-        <span style="color: #60a5fa;">ZETHETA ALGORITHMS</span>
-        <h3>Software Engineer (HTTPE)</h3>
-        <p>Certificate of Project Work Experience · 15 Full Time Days Equivalent · Sep 2026</p>
-        <b style="color: #60a5fa;">Inspect verified certificate ↗</b>
-      </div>
-      <div class="credential-card" data-cert="codec" style="cursor: pointer;" data-parallax-speed="0.08">
-        <span style="color: #34d399;">CODEC TECHNOLOGIES • AICTE</span>
-        <h3>Artificial Intelligence Intern</h3>
-        <p>AICTE &amp; ICAC Approved · Google for Education Partner · ID: CORPORATE6758d549ce59e1733946553</p>
-        <b style="color: #34d399;">Inspect verified certificate ↗</b>
-      </div>
-      <div class="credential-card" data-cert="codealpha" style="cursor: pointer;" data-parallax-speed="0.06">
-        <span style="color: #c084fc;">CODEALPHA • MSME</span>
-        <h3>Frontend Development Intern</h3>
-        <p>Certificate of Completion · Govt. MSME Accredited · Student ID: CA/DF1/205801</p>
-        <b style="color: #c084fc;">Inspect verified certificate ↗</b>
-      </div>
-      <a class="credential-card" href="https://www.credly.com/badges/a1f6250d-6724-4e13-92b9-c198ad3f2696" target="_blank" rel="noopener noreferrer" data-parallax-speed="0.09">
-        <span>IBM SKILLSBUILD</span>
-        <h3>Career Management Essentials</h3>
-        <p>Foundational leadership, technical career pathing, and workplace problem solving.</p>
-        <b>Open verified Credly badge ↗</b>
-      </a>
-      <a class="credential-card" href="#skills" data-parallax-speed="0.07">
-        <span>INTERNSHALA TRAININGS</span>
-        <h3>Data Science with AI</h3>
-        <p>Completed an intensive eight-week training program in Data Science with AI.</p>
-        <b>Verified curriculum record ↗</b>
-      </a>
+    <!-- Verified Learning & Certifications Section -->
+  <section class="credentials-section" id="credentials">
+    <p class="label parallax-elem" data-parallax-speed="-0.14" style="color: #60a5fa;">// VERIFIED LEARNING &amp; CERTIFICATIONS</p>
+    <h2 class="parallax-elem" data-parallax-speed="-0.08">Skills Backed by <em>Verified Credentials</em></h2>
+    <p class="sub parallax-elem" data-parallax-speed="-0.04">Official certificates, hackathon honors, and industry accreditations from Google Cloud, Samsung, IBM, and leading tech organizations.</p>
+
+    <div class="credentials-modern-grid">
+
+      <!-- CARD 01: WebRush Rank 15 Excellence -->
+      <article class="cert-modern-card" data-cert="webrush">
+        <div class="cert-card-media" data-cert-trigger="webrush" title="Click to inspect full certificate">
+          <img src="public/assets/certificates/webrush-rank15-excellence.jpeg" alt="WebRush 2026 Certificate of Excellence - Rank 15" loading="lazy" decoding="async">
+          <div class="cert-card-zoom-overlay">
+            <span>🔍 Inspect Full View</span>
+          </div>
+        </div>
+        <div class="cert-card-content">
+          <div class="cert-card-issuer">// FRONTEND ARENA &amp; UNSTOP</div>
+          <h3 class="cert-card-title">WebRush 2026 — Rank #15 Excellence</h3>
+          <p class="cert-card-desc">Secured Rank #15 in competitive 6-hour frontend hackathon. Tested on rapid prototyping, creative UI, and technical delivery · ID: FA-8VHV5HYV</p>
+          <div class="cert-card-footer">
+            <button type="button" class="pill light open-cert-btn" data-cert="webrush">Inspect Certificate ↗</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 02: Google Cloud & Simplilearn Generative AI -->
+      <article class="cert-modern-card" data-cert="googlecloud">
+        <div class="cert-card-media" data-cert-trigger="googlecloud" title="Click to inspect full certificate">
+          <img src="public/assets/certificates/google-cloud-generative-ai.jpeg" alt="Google Cloud Generative AI Studio Declaration of Completion" loading="lazy" decoding="async">
+          <div class="cert-card-zoom-overlay">
+            <span>🔍 Inspect Full View</span>
+          </div>
+        </div>
+        <div class="cert-card-content">
+          <div class="cert-card-issuer" style="color: #38bdf8;">// GOOGLE CLOUD &amp; SIMPLILEARN</div>
+          <h3 class="cert-card-title">Introduction to Generative AI Studio</h3>
+          <p class="cert-card-desc">Comprehensive training on Google Cloud generative models, prompt engineering, and Vertex AI applications · Code: 9280368</p>
+          <div class="cert-card-footer">
+            <button type="button" class="pill light open-cert-btn" data-cert="googlecloud">Inspect Certificate ↗</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 03: Samsung Innovation Campus Big Data -->
+      <article class="cert-modern-card" data-cert="samsung">
+        <div class="cert-card-media" data-cert-trigger="samsung" title="Click to inspect full certificate">
+          <img src="public/assets/certificates/samsung-innovation-bigdata.jpeg" alt="Samsung Innovation Campus Big Data Certificate" loading="lazy" decoding="async">
+          <div class="cert-card-zoom-overlay">
+            <span>🔍 Inspect Full View</span>
+          </div>
+        </div>
+        <div class="cert-card-content">
+          <div class="cert-card-issuer" style="color: #3b82f6;">// SAMSUNG SOUTHWEST ASIA &amp; ESSCI</div>
+          <h3 class="cert-card-title">Samsung Innovation Campus: Big Data</h3>
+          <p class="cert-card-desc">Rigorous multi-month training in large-scale dataset handling, statistical modeling, and data pipelines · ID: SIC08220</p>
+          <div class="cert-card-footer">
+            <button type="button" class="pill light open-cert-btn" data-cert="samsung">Inspect Certificate ↗</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 04: Internshala & IITM Pravartak Data Science -->
+      <article class="cert-modern-card" data-cert="internshala">
+        <div class="cert-card-media" data-cert-trigger="internshala" title="Click to inspect full certificate">
+          <img src="public/assets/certificates/internshala-datascience-ai.jpeg" alt="Internshala IITM Pravartak Data Science with AI Certificate" loading="lazy" decoding="async">
+          <div class="cert-card-zoom-overlay">
+            <span>🔍 Inspect Full View</span>
+          </div>
+        </div>
+        <div class="cert-card-content">
+          <div class="cert-card-issuer" style="color: #34d399;">// INTERNSHALA &amp; IITM PRAVARTAK</div>
+          <h3 class="cert-card-title">Data Science with AI (8-Week Training)</h3>
+          <p class="cert-card-desc">Comprehensive curriculum spanning exploratory data analysis, predictive modeling, machine learning, and Capstone delivery</p>
+          <div class="cert-card-footer">
+            <button type="button" class="pill light open-cert-btn" data-cert="internshala">Inspect Certificate ↗</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 05: DataCulture Technologies Python Essentials -->
+      <article class="cert-modern-card" data-cert="dataculture">
+        <div class="cert-card-media" data-cert-trigger="dataculture" title="Click to inspect full certificate">
+          <img src="public/assets/certificates/dataculture-python-essentials.jpeg" alt="DataCulture Technologies Python Essentials Certificate" loading="lazy" decoding="async">
+          <div class="cert-card-zoom-overlay">
+            <span>🔍 Inspect Full View</span>
+          </div>
+        </div>
+        <div class="cert-card-content">
+          <div class="cert-card-issuer" style="color: #f59e0b;">// DATACULTURE TECHNOLOGIES</div>
+          <h3 class="cert-card-title">Python Essentials &amp; App Development</h3>
+          <p class="cert-card-desc">Industrial training on practical Python programming, backend logic, and scalable application development with QR verification</p>
+          <div class="cert-card-footer">
+            <button type="button" class="pill light open-cert-btn" data-cert="dataculture">Inspect Certificate ↗</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 06: IBM SkillsBuild Career Management -->
+      <article class="cert-modern-card" data-cert="ibm">
+        <div class="cert-card-media" data-cert-trigger="ibm" title="Click to inspect full certificate">
+          <img src="public/assets/certificates/ibm-skillsbuild-career.jpeg" alt="IBM SkillsBuild Career Management Essentials" loading="lazy" decoding="async">
+          <div class="cert-card-zoom-overlay">
+            <span>🔍 Inspect Full View</span>
+          </div>
+        </div>
+        <div class="cert-card-content">
+          <div class="cert-card-issuer" style="color: #60a5fa;">// IBM SKILLSBUILD • CREDLY VERIFIED</div>
+          <h3 class="cert-card-title">Career Management Essentials</h3>
+          <p class="cert-card-desc">Commitment to professional excellence, workplace agility, and technical collaboration · Verified on Credly</p>
+          <div class="cert-card-footer">
+            <button type="button" class="pill light open-cert-btn" data-cert="ibm">Inspect Certificate ↗</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 07: ITM GIDA Innovation & Technology -->
+      <article class="cert-modern-card" data-cert="itm">
+        <div class="cert-card-media" data-cert-trigger="itm" title="Click to inspect full certificate">
+          <img src="public/assets/certificates/itm-innovation-appreciation.jpeg" alt="ITM GIDA Innovation and Technology Certificate" loading="lazy" decoding="async">
+          <div class="cert-card-zoom-overlay">
+            <span>🔍 Inspect Full View</span>
+          </div>
+        </div>
+        <div class="cert-card-content">
+          <div class="cert-card-issuer" style="color: #38bdf8;">// ITM GIDA GORAKHPUR</div>
+          <h3 class="cert-card-title">Innovation &amp; Technology Appreciation</h3>
+          <p class="cert-card-desc">Awarded by Director Dr. N. K. Singh for participation and active presentation in Innovation &amp; Technology (BCA 1st Year)</p>
+          <div class="cert-card-footer">
+            <button type="button" class="pill light open-cert-btn" data-cert="itm">Inspect Certificate ↗</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 08: Simplilearn Android App Development -->
+      <article class="cert-modern-card" data-cert="simplilearn">
+        <div class="cert-card-media" data-cert-trigger="simplilearn" title="Click to inspect full certificate">
+          <img src="public/assets/certificates/simplilearn-android-dev.jpeg" alt="Simplilearn Android App Development for Beginners" loading="lazy" decoding="async">
+          <div class="cert-card-zoom-overlay">
+            <span>🔍 Inspect Full View</span>
+          </div>
+        </div>
+        <div class="cert-card-content">
+          <div class="cert-card-issuer" style="color: #34d399;">// SIMPLILEARN SKILLUP</div>
+          <h3 class="cert-card-title">Android App Development for Beginners</h3>
+          <p class="cert-card-desc">Online course completion in mobile engineering, Android UI components, and application lifecycle · Code: 10342854</p>
+          <div class="cert-card-footer">
+            <button type="button" class="pill light open-cert-btn" data-cert="simplilearn">Inspect Certificate ↗</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 09: LearnTube AI ML Assessment -->
+      <article class="cert-modern-card" data-cert="learntube">
+        <div class="cert-card-media" data-cert-trigger="learntube" title="Click to inspect full certificate">
+          <img src="public/assets/certificates/learntube-ai-ml-assessment.jpeg" alt="LearnTube AI ML Assessment Certificate of Completion" loading="lazy" decoding="async">
+          <div class="cert-card-zoom-overlay">
+            <span>🔍 Inspect Full View</span>
+          </div>
+        </div>
+        <div class="cert-card-content">
+          <div class="cert-card-issuer" style="color: #c084fc;">// LEARNTUBE.AI</div>
+          <h3 class="cert-card-title">AI &amp; ML Assessment Completion</h3>
+          <p class="cert-card-desc">Successfully completed comprehensive evaluation across machine learning principles and AI fundamentals · ID: DJA-B-1-1801612-0</p>
+          <div class="cert-card-footer">
+            <button type="button" class="pill light open-cert-btn" data-cert="learntube">Inspect Certificate ↗</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 10: JCI Gorakhpur Swaraj Youth Leadership -->
+      <article class="cert-modern-card" data-cert="jci">
+        <div class="cert-card-media" data-cert-trigger="jci" title="Click to inspect full certificate">
+          <img src="public/assets/certificates/jci-youth-leadership.jpeg" alt="JCI Gorakhpur Swaraj Certificate of Appreciation" loading="lazy" decoding="async">
+          <div class="cert-card-zoom-overlay">
+            <span>🔍 Inspect Full View</span>
+          </div>
+        </div>
+        <div class="cert-card-content">
+          <div class="cert-card-issuer" style="color: #f59e0b;">// JCI GORAKHPUR SWARAJ</div>
+          <h3 class="cert-card-title">Youth Leadership &amp; Voice Day</h3>
+          <p class="cert-card-desc">Certificate of Appreciation awarded for enthusiastic participation, active involvement, and spirit of leadership</p>
+          <div class="cert-card-footer">
+            <button type="button" class="pill light open-cert-btn" data-cert="jci">Inspect Certificate ↗</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 11: Unstop WebRush Participation -->
+      <article class="cert-modern-card" data-cert="unstop">
+        <div class="cert-card-media" data-cert-trigger="unstop" title="Click to inspect full certificate">
+          <img src="public/assets/certificates/unstop-webrush-participation.jpeg" alt="Unstop WebRush Certificate of Participation" loading="lazy" decoding="async">
+          <div class="cert-card-zoom-overlay">
+            <span>🔍 Inspect Full View</span>
+          </div>
+        </div>
+        <div class="cert-card-content">
+          <div class="cert-card-issuer" style="color: #60a5fa;">// UNSTOP &amp; FRONTEND ARENA</div>
+          <h3 class="cert-card-title">WebRush: 6-Hour Frontend Hackathon</h3>
+          <p class="cert-card-desc">Official participation credential representing Institute of Technology &amp; Engineering Studies in WebRush frontend challenge</p>
+          <div class="cert-card-footer">
+            <button type="button" class="pill light open-cert-btn" data-cert="unstop">Inspect Certificate ↗</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 12: ICAT Internship Common Aptitude Test -->
+      <article class="cert-modern-card" data-cert="icat">
+        <div class="cert-card-media" data-cert-trigger="icat" title="Click to inspect full certificate">
+          <img src="public/assets/certificates/icat-internship-aptitude.jpeg" alt="ICAT Certificate of Participation" loading="lazy" decoding="async">
+          <div class="cert-card-zoom-overlay">
+            <span>🔍 Inspect Full View</span>
+          </div>
+        </div>
+        <div class="cert-card-content">
+          <div class="cert-card-issuer" style="color: #94a3b8;">// ICAT APTITUDE TESTING</div>
+          <h3 class="cert-card-title">Internship Common Aptitude Test</h3>
+          <p class="cert-card-desc">Certificate of Participation acknowledging analytical dedication and problem-solving reasoning · No: CIT-P-2506530</p>
+          <div class="cert-card-footer">
+            <button type="button" class="pill light open-cert-btn" data-cert="icat">Inspect Certificate ↗</button>
+          </div>
+        </div>
+      </article>
+
     </div>
   </section>
 
@@ -984,7 +1173,7 @@
 </main>
 
 <script src="lenis.min.js"></script>
-<script src="script.js?v=7.0"></script>
+<script src="script.js?v=8.0"></script>
 <script src="enhancements.js"></script>
 <script src="motion.js?v=4.0"></script>
 </body>
