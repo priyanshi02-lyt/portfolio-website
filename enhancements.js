@@ -9,7 +9,7 @@
     });
   }, { threshold: 0.1 });
 
-  document.querySelectorAll('section:not(.hero-scrub-container) h2, .project, .experience-grid article, .stats article, .roadmap-card, .credential-card').forEach((el, index) => {
+  document.querySelectorAll('section:not(.hero-scrub-container) h2, .project, .internship-card, .experience-grid article, .stats article, .roadmap-card, .credential-card').forEach((el, index) => {
     el.classList.add('motion-reveal');
     el.style.setProperty('--delay', `${(index % 4) * 80}ms`);
     observer.observe(el);
